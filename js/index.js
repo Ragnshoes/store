@@ -98,8 +98,16 @@ let SuccessModalOpenV2 = document.querySelector('.form-block__buttons')
 let SuccessModal = document.querySelector('.modalform');
 let SuccessModalOpen = document.querySelector('.form-block__button');
 SuccessModalOpen.addEventListener('click', selectDate);
-SuccessModalOpenV2.addEventListener('click',selectDate)
+SuccessModalOpenV2.addEventListener('click',selectDateV2)
 
+
+function selectDateV2(){
+  if(this.classList.contains('disabled')){
+    SuccessModalV2.classList.remove('active');
+}else {
+    SuccessModalV2.classList.add('active');
+}
+}
 
 function selectDate(){
   if(this.classList.contains('disabled')){
