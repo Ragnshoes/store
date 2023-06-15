@@ -92,6 +92,118 @@ if (menuBtn) {
   })
 }
 
+let modalServices = document.querySelector('.modalservices');
+let modalServices1 = document.querySelector('.modalservices.v1');
+let modalServices2 = document.querySelector('.modalservices.v2');
+let modalServices3 = document.querySelector('.modalservices.v3');
+let modalServices4 = document.querySelector('.modalservices.v4');
+let modalServices5 = document.querySelector('.modalservices.v5');
+
+
+let modalserv = document.querySelector('.services-block__item');
+let modalserv1 = document.querySelector('.services-block__item.v1');
+let modalserv2 = document.querySelector('.services-block__item.v2');
+let modalserv3 = document.querySelector('.services-block__item.v3');
+let modalserv4 = document.querySelector('.services-block__item.v4');
+let modalserv5 = document.querySelector('.services-block__item.v5');
+
+let modalServicesBtn = document.getElementById('modalbtn');
+let modalServicesBtn1 = document.getElementById('modalbtn1');
+let modalServicesBtn2 = document.getElementById('modalbtn2');
+let modalServicesBtn3 = document.getElementById('modalbtn3');
+let modalServicesBtn4 = document.getElementById('modalbtn4');
+let modalServicesBtn5 = document.getElementById('modalbtn5');
+
+modalserv.addEventListener('click', selectDate1);
+modalServicesBtn.addEventListener('click', function(){
+  modalServices.classList.remove('active');
+});
+
+function selectDate1(){
+  modalServices.classList.add('active');
+}
+modalserv1.addEventListener('click', selectDate2);
+modalServicesBtn1.addEventListener('click', function(){
+  modalServices1.classList.remove('active');
+});
+
+function selectDate2(){
+  modalServices1.classList.add('active');
+}
+modalserv2.addEventListener('click', selectDate3);
+modalServicesBtn2.addEventListener('click', function(){
+  modalServices2.classList.remove('active');
+});
+
+function selectDate3(){
+  modalServices2.classList.add('active');
+}
+modalserv3.addEventListener('click', selectDate4);
+modalServicesBtn3.addEventListener('click', function(){
+  modalServices3.classList.remove('active');
+});
+
+function selectDate4(){
+  modalServices3.classList.add('active');
+}
+modalserv4.addEventListener('click', selectDate5);
+modalServicesBtn4.addEventListener('click', function(){
+  modalServices4.classList.remove('active');
+});
+
+function selectDate5(){
+  modalServices4.classList.add('active');
+}
+modalserv5.addEventListener('click', selectDate6);
+modalServicesBtn5.addEventListener('click', function(){
+  modalServices5.classList.remove('active');
+});
+
+function selectDate6(){
+  modalServices5.classList.add('active');
+}
+// function selectDate2(){
+//   if(this.classList.contains('disabled')){
+//     modalServices1.classList.remove('active');
+//   }else {
+//     modalServices1.classList.add('active');
+//   }
+// }
+// function selectDate3(){
+//   if(this.classList.contains('disabled')){
+//     modalServices2.classList.remove('active');
+//   }else {
+//     modalServices2.classList.add('active');
+//   }
+// }
+// function selectDate4(){
+//   if(this.classList.contains('disabled')){
+//     modalServices3.classList.remove('active');
+//   }else {
+//     modalServices3.classList.add('active');
+//   }
+// }
+// function selectDate5(){
+//   if(this.classList.contains('disabled')){
+//     modalServices4.classList.remove('active');
+//   }else {
+//     modalServices4.classList.add('active');
+//   }
+// }
+// function selectDate6(){
+//   if(this.classList.contains('disabled')){
+//     modalServices5.classList.remove('active');
+//   }else {
+//     modalServices5.classList.add('active');
+//   }
+// }
+
+
+
+
+
+
+
 
 let SuccessModalV2 = document.querySelector('.modalform.v2');
 let SuccessModalOpenV2 = document.querySelector('.form-block__buttons')
